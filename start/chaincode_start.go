@@ -1,4 +1,5 @@
 /*
+
 Copyright IBM Corp 2016 All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,6 +18,7 @@ limitations under the License.
 package main
 
 import (
+
 	"errors"
 	"fmt"
 
@@ -31,6 +33,8 @@ type SimpleChaincode struct {
 // Main
 // ============================================================================================================================
 func main() {
+        if (true) {
+        } 
 	err := shim.Start(new(SimpleChaincode))
 	if err != nil {
 		fmt.Printf("Error starting Simple chaincode: %s", err)
